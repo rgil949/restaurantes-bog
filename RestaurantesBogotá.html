@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurantes Bogotá</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para el menú */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        /* Estilos para los restaurantes */
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .container img {
+            width: 150px;
+            height: auto;
+        }
+
+        /* Estilos del botón de reservar */
+        .btn {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Restaurantes Bogotá</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+                <li><a href="about.html">Acerca de</a></li>
+                <li><a href="reservar.html">Reservar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contenido">
+            <div class="mapa">
+                <iframe 
+                    src="https://www.google.com/maps/d/u/0/embed?mid=1djsRIqpPJFy5fM3iE6V22gwUAIfchGM&ehbc=2E312F&noprof=1" 
+                    width="90%" height="480" 
+                    style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <article class="container">
+                <img src="abasto.jpg" alt="Abasto">
+                <div class="texto">
+                    <h2>Abasto</h2>
+                    <p>Este restaurante ofrece una experiencia gastronómica con platos de la cocina colombiana elaborados con ingredientes frescos y de temporada.</p>
+                    <p><strong>Dirección:</strong> CL. 119 #5-41, Bogotá</p>
+                    <a href="reservar.html" class="btn">Reservar</a>
+                </div>
+            </article>
+
+            <article class="container">
+                <img src="La puerta falsa.jpg" alt="La Puerta Falsa">
+                <div class="texto">
+                    <h2>La Puerta Falsa</h2>
+                    <p>Restaurante con más de 200 años de tradición, famoso por sus tamales y chocolate caliente con queso.</p>
+                    <p><strong>Dirección:</strong> CL. 11 #6-50, Bogotá</p>
+                    <a href="reservar.html" class="btn">Reservar</a>
+                </div>
+            </article>
+
+            <article class="container">
+                <img src="prudencia.jpg" alt="Prudencia">
+                <div class="texto">
+                    <h2>Prudencia</h2>
+                    <p>Este restaurante vegetariano ofrece platos creativos y deliciosos a precios muy razonables.</p>
+                    <p><strong>Dirección:</strong> Cra. 2 #11-34, Bogotá</p>
+                    <a href="reservar.html" class="btn">Reservar</a>
+                </div>
+            </article>
+
+            <article class="container">
+                <img src="pastorcito.jpg" alt="Pastorcito">
+                <div class="texto">
+                    <h2>Pastorcito</h2>
+                    <p>Un restaurante mexicano con tacos y burritos deliciosos a precios muy accesibles.</p>
+                    <p><strong>Dirección:</strong> Cl. 59 #7-31, Bogotá</p>
+                    <a href="reservar.html" class="btn">Reservar</a>
+                </div>
+            </article>
+
+            <article class="container">
+                <img src="Andres carne de res.jpg" alt="Andrés Carne de Res">
+                <div class="texto">
+                    <h2>Andrés Carne de Res</h2>
+                    <p>Un clásico infaltable, famoso por su ambiente festivo, comida deliciosa y carnes a la parrilla.</p>
+                    <p><strong>Dirección:</strong> Cl. 82 #12 -21, Bogotá</p>
+                    <a href="reservar.html" class="btn">Reservar</a>
+                </div>
+            </article>
+
+            <article class="container">
+                <img src="Chicheria demente.jpg" alt="Chichería Demente">
+                <div class="texto">
+                    <h2>Chichería Demente</h2>
+                    <p>Explora la cocina colombiana desde una perspectiva contemporánea, con platos innovadores y sabores sorprendentes.</p>
+                    <p><strong>Dirección:</strong> Cl. 82 #12 -21, Bogotá</p>
+                    <a href="reservar.html" class="btn">Reservar</a>
+                </div>
+            </article>
+
+        </section>
+    </main>
+</body>
+</html>
